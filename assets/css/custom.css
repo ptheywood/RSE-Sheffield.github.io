@@ -13,23 +13,32 @@
 */
 
 :root {
-    --uos-deep-violet: #440099;
-    --uos-deep-violet-90: #541aa4;
-    --uos-deep-violet-80: #6431ac;
-    --uos-deep-violet-70: #784bb6;
-    --uos-powder-blue: #9ADBE8;
-    --uos-powder-blue-90: #9fddea;
-    --uos-powder-blue-80: #ade0eb;
-    --uos-powder-blue-70: #b6e6ee;
+    /* UoS Core colour palette */
+    --uos-brand-violet: #440099;
+    --uos-dark-violet: #24125E;
+    --uos-electric-violet: #7000FF;
+    --uos-powder-violet: #A78CFA;
+    --uos-pale-violet: #C6BBFF;
+    --uos-wave-white: #F8F8F9;
     --uos-midnight-black: #131E29;
+    /* unofficial shades */
+    --uos-brand-violet-70: #784bb6;
     --uos-midnight-black-90: #2c3841;
-    --uos-midnight-black-80: #424a54;
-    --uos-midnight-black-70: #57636b;
-    --uos-teal: #005A8F;
-    --uos-aqua: #00BBCC;
-    --uos-mint-green: #00CE7C;
+    --uos-midnight-black-80: #262f3b;
+
+    /* UoS Wider colour palette */
     --uos-coral: #E7004C;
+    --uos-purple: #981F92;
+    --uos-teal: #005A8F;
+    --uos-peak-green: #005750;
+    --uos-flamingo: #FF6371;
+    --uos-pink: #FF79E1;
+    --uos-aqua: #00BBCC;
+    --uos-spearmint: #3BD4AE;
     --uos-peach: #FF9664;
+    --uos-lavender: #DAA8E2;
+    --uos-powder-blue: #9ADBE8; /* no longer a core colour */
+    --uos-pastel-green: #A1DED2;
 }
 
 body {
@@ -57,11 +66,11 @@ h5, .h5 { font-size: 1.25rem; }
 h6, .h6 { font-size: 1rem; }
 
 h1, h2, h3, h4, h5, h6  {
-    color: var(--uos-deep-violet);
+    color: var(--uos-brand-violet);
 }
 
 a {
-    color: var(--uos-deep-violet);
+    color: var(--uos-brand-violet);
 }
 
 .nav-link{
@@ -78,7 +87,7 @@ a {
 }
 
 .contact-inner a:hover {
-    color: var(--uos-deep-violet-70);
+    color: var(--uos-brand-violet-70);
 }
 
 .contact-inner h2 {
@@ -105,7 +114,7 @@ img {
 
 /* Visually distinguish past events.*/
 .event-item-previous a {
-    color: var(--uos-deep-violet-70);
+    color: var(--uos-brand-violet-70);
 }
 .event-item-previous > div >img {
     opacity: 0.40;
@@ -219,20 +228,20 @@ blockquote {
 }
 
 .btn-primary:hover {
-    background-color: var(--uos-deep-violet);
-    border-color: var(--uos-deep-violet);
+    background-color: var(--uos-brand-violet);
+    border-color: var(--uos-brand-violet);
     color: var(--white);
 }
 
 .btn-success {
-    background-color: var(--uos-mint-green);
-    border-color: var(--uos-mint-green);
+    background-color: var(--uos-spearmint);
+    border-color: var(--uos-spearmint);
     color: var(--uos-midnight-black);
 }
 
 .btn-success:hover {
-    background-color: var(--uos-deep-violet);
-    border-color: var(--uos-deep-violet);
+    background-color: var(--uos-brand-violet);
+    border-color: var(--uos-brand-violet);
     color: var(--white);
 }
 
@@ -246,7 +255,7 @@ blockquote {
 }
 
 a:hover {
-    color: var(--uos-deep-violet);
+    color: var(--uos-brand-violet);
 }
 
 /* project page tag cloud */
