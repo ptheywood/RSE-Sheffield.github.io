@@ -21,6 +21,35 @@
     font-style: monospace;
   }
 
+:root {
+    /* UoS Core colour palette */
+    --uos-brand-violet: #440099;
+    --uos-dark-violet: #24125E;
+    --uos-electric-violet: #7000FF;
+    --uos-powder-violet: #A78CFA;
+    --uos-pale-violet: #C6BBFF;
+    --uos-wave-white: #F8F8F9;
+    --uos-midnight-black: #131E29;
+    /* unofficial shades */
+    --uos-brand-violet-70: #784bb6;
+    --uos-midnight-black-90: #2c3841;
+    --uos-midnight-black-80: #262f3b;
+
+    /* UoS Wider colour palette */
+    --uos-coral: #E7004C;
+    --uos-purple: #981F92;
+    --uos-teal: #005A8F;
+    --uos-peak-green: #005750;
+    --uos-flamingo: #FF6371;
+    --uos-pink: #FF79E1;
+    --uos-aqua: #00BBCC;
+    --uos-spearmint: #3BD4AE;
+    --uos-peach: #FF9664;
+    --uos-lavender: #DAA8E2;
+    --uos-powder-blue: #9ADBE8; /* no longer a core colour */
+    --uos-pastel-green: #A1DED2;
+}
+
 html {
     /* Notify web browser of the static header, so anchors offset */
     scroll-padding-top: 80px;
