@@ -46,11 +46,19 @@ body {
 }
 
 .header{
-    background-color: var(--white);
+    background-color: var(--uos-wave-white);
 }
 
 .promo{
     background: var(--uos-midnight-black);
+}
+
+.promo h1,
+.promo h2,
+.promo h3,
+.promo h4,
+.promo h5 {
+    color: var(--uos-wave-white);
 }
 
 .footer{
@@ -91,7 +99,7 @@ a {
 }
 
 .contact-inner h2 {
-    color: var(--white) !important;
+    color: var(--uos-wave-white) !important;
 }
 
 .seminar-section {
@@ -133,7 +141,7 @@ figcaption {
     margin-left: -2px;
     margin-right: -2px;
     margin-bottom: 0px;
-    background-color: var(--white)fff;
+    background-color: var(--uos-wave-white)fff;
     display: inline-block;
 }
 .pagination a:hover {
@@ -230,7 +238,7 @@ blockquote {
 .btn-primary:hover {
     background-color: var(--uos-brand-violet);
     border-color: var(--uos-brand-violet);
-    color: var(--white);
+    color: var(--uos-wave-white);
 }
 
 .btn-success {
@@ -242,7 +250,7 @@ blockquote {
 .btn-success:hover {
     background-color: var(--uos-brand-violet);
     border-color: var(--uos-brand-violet);
-    color: var(--white);
+    color: var(--uos-wave-white);
 }
 
 .sm-a {
