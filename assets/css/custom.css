@@ -56,6 +56,10 @@ a {
     color: var(--uos-midnight-black) !important;
 }
 
+.header .main-nav .nav .nav-item {
+    margin-right: 18px;
+}
+
 .contact {
     background: var(--uos-midnight-black);
 }
@@ -79,8 +83,8 @@ a {
     border-bottom: 1px solid #ddd;
 }
 
-/* Make all images behave fluidly by default. I.e. not wider than their parent with a maintained aspect ratio. */
-img {
+/* Make all images behave fluidly by default, unless they have a width or height attribute. I.e. not wider than their parent with a maintained aspect ratio. */
+img:not([width]):not([height]) {
     max-width: 100%;
     height: auto;
 }
