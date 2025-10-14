@@ -7,6 +7,10 @@ othernames: Peter
 surname: Heywood
 role: Research Software Engineer
 
+website: https://ptheywood.uk
+github: ptheywood
+email: p.heywood@sheffield.ac.uk
+
 ---
 
 Peter is a Research Software Engineer in the process of completing his PhD at the University of Sheffield.
