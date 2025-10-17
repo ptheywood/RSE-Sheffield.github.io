@@ -53,6 +53,7 @@ layout: default
                     #home-carousel .carousel-item {
                         height: 400px;
                         width: 100%;
+                        background: var(--uos-lavender-50);
                     }
                     #home-carousel .carousel-item > img {
                         height: 400px;
@@ -61,39 +62,37 @@ layout: default
                     }
                     #home-carousel .carousel-item .carousel-caption {
                         color: #000;
-                        background-color: #fdfdbd66;
+                        background-color: var(--uos-lavender-50);
                     }
                     button.carousel-control-prev,
                     button.carousel-control-next {
                         border: 0;
                         background: transparent;
                     }
+                    .carousel-control-next,
+                    .carousel-control-prev,
+                    .carousel-indicators {
+                        filter: invert(100%);
+                    }
                 </style>
-                <div id="home-carousel" class="carousel slide" data-ride="carousel">
+                <!-- automove carousels are not great for accessibility. -->
+                <div id="home-carousel" class="carousel slide" data-ride="carousel" data-interval="10000" data-pause="false">
                     <ol class="carousel-indicators">
                         <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
                         <li data-target="#home-carousel" data-slide-to="1"></li>
                         <li data-target="#home-carousel" data-slide-to="2"></li>
                         <li data-target="#home-carousel" data-slide-to="3"></li>
-                        <li data-target="#home-carousel" data-slide-to="4"></li>
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="/assets/images/2025-09-29-RSECon25.png" class="d-block w-100" alt="...">
+                            <img src="/assets/images/2025-09-29-RSECon25.png" class="d-block" alt="...">
                             <div class="carousel-caption d-block">
                                 <h5>Foo</h5>
-                                <p>Some representative placeholder content for the first slide.</p><a class="btn btn-primary">Click me</a>
+                                <p>Some representative placeholder content for the first slide.</p><a href="#" class="btn btn-uos-electric-violet">Click me</a>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="/assets/images/logo/rse-logoonly-stroke.png" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-block">
-                                <h5>Bar</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <!-- <img src="/assets/images/logo/rse-logoonly-stroke.png" class="d-block w-100" alt="..."> -->
+                            <!-- <img src="/assets/images/logo/rse-logoonly-stroke.png" class="d-block" alt="..."> -->
                             <div class="carousel-caption d-block">
                                 <h5>{{newsletter_0.date | date: "%B %Y"}} newsletter</h5>
                                 <p>Read the latest University of Sheffield Research Software Engineering Community Newsletter</p>
@@ -112,12 +111,12 @@ layout: default
                                     </span>
                                     {% endif %}
                                 </p>
-                                <a href="{{ newsletter_0.url }}" class="btn btn-dark">Read more</a>
+                                <a href="{{ newsletter_0.url }}" class="btn btn-uos-electric-violet">Read more</a>
                                 <a href="/newsletters/" class="btn btn-dark">All Newsletters</a>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <!-- <img src="/assets/images/logo/rse-logoonly-stroke.png" class="d-block w-100" alt="..."> -->
+                            <!-- <img src="/assets/images/logo/rse-logoonly-stroke.png" class="d-block" alt="..."> -->
                             <div class="carousel-caption d-block">
                                 <h5>Blog: {{ blog_post_0.title }}</h5>
                                 <p>
@@ -138,12 +137,12 @@ layout: default
 
                                 <p>{{blog_post_0.excerpt }}</p>
 
-                                <a href="{{ blog_post_0.url | relative_url }}"" class="btn btn-dark">Read More</a>
+                                <a href="{{ blog_post_0.url | relative_url }}"" class="btn btn-uos-electric-violet">Read More</a>
                                 <a href="/newsletters/" class="btn btn-dark">All Blog articles</a>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="/assets/images/2025-09-29-RSECon25.png" class="d-block w-100" alt="...">
+                            <img src="/assets/images/2025-09-29-RSECon25.png" class="d-block" alt="...">
                             <div class="carousel-caption d-block">
                                 <h5>Blog: {{ blog_post_1.title }}</h5>
                                 <p>
@@ -164,7 +163,7 @@ layout: default
 
                                 <p>{{blog_post_1.excerpt }}</p>
 
-                                <a href="{{ blog_post_1.url | relative_url }}"" class="btn btn-dark">Read More</a>
+                                <a href="{{ blog_post_1.url | relative_url }}"" class="btn btn-uos-electric-violet">Read More</a>
                                 <a href="/newsletters/" class="btn btn-dark">All Blog articles</a>
                             </div>
                         </div>
@@ -207,7 +206,7 @@ layout: default
                 <div class="card w-100 text-white bg-uos-powder-violet text-center">
                     <h3 class="card-title">Code Clinics</h3>
                     <p>Work with an expert for 30 mins on your code.</p>
-                    <a href="/support/code-clinic" class="btn btn-dark" style="margin-top:auto;">Book</a>
+                    <a href="/support/code-clinic" class="btn btn-dark" style="margin-top:auto;">Book a code clinic</a>
                 </div>
             </div>
 
@@ -246,9 +245,9 @@ layout: default
             </div>
             <div class="col-xs-12 col-md-6 col-lg-4 d-flex align-items-stretch">
                 <div class="card w-100 text-white bg-uos-powder-violet text-center">
-                    <h3 class="card-title">Projects</h3>
-                    <p>Add fractional RSE time from the team to your funding application</p>
-                    <a href="mailto:rse@sheffield.ac.uk" class="btn btn-dark" style="margin-top:auto;">Email rse@sheffield.ac.uk</a>
+                    <h3 class="card-title mt-4">Projects</h3>
+                    <p class="mt-auto">Add fractional RSE time from the team to your funding application</p>
+                    <a href="mailto:rse@sheffield.ac.uk" class="btn btn-dark mt-auto">Email rse@sheffield.ac.uk</a>
                 </div>
             </div>
         </div>
@@ -264,10 +263,10 @@ layout: default
                 <p>Morbi porta, turpis ac consectetur ultricies, mi orci pulvinar mi, non cursus sem neque a urna. In eget odio malesuada, pretium ex sed, ultrices est. Integer bibendum nulla id lorem luctus, non porta velit ultrices. Aenean sagittis nunc eu sapien imperdiet efficitur. Proin efficitur tristique dolor, et maximus diam. Quisque aliquam accumsan elit, id congue metus interdum id. Sed convallis tellus sed auctor dictum. Aenean egestas a lorem et ornare. Cras ornare ultricies quam eu pulvinar. In mollis ante tortor, et sollicitudin ligula fringilla sit amet. Vestibulum aliquet vulputate aliquet. Nunc tincidunt blandit aliquam. Fusce a quam dapibus, maximus nisi id, volutpat nibh. Nullam quam sem, pulvinar ac nunc ac, vulputate hendrerit dui. Integer sit amet enim ultricies, mollis est nec, tempus sem.</p>
             </div>
             <div class="col-xs-12 col-md-6 col-lg-4 order-md-first d-flex align-items-stretch">
-                <div class="card w-100 text-white bg-uos-dark-violet text-center">
-                    <h3 class="card-title text-white">FAIR² for research software</h3>
-                    <p>Dedicated training on how to apply FAIR principles to research software, enabling you to make your research more open.</p>
-                    <a href="/training/fair4rs" class="btn btn-dark" style="margin-top:auto;">FAIR² 4 RS</a>
+                <div class="card w-100 text-white bg-uos-brand-violet text-center">
+                    <h3 class="card-title mt-4 text-white">FAIR² for research software</h3>
+                    <p class="mt-auto">Dedicated training on how to apply FAIR principles to research software, enabling you to make your research more open.</p>
+                    <a href="/training/fair4rs" class="btn btn-dark mt-auto">FAIR² 4 RS</a>
                 </div>
             </div>
         </div>
@@ -282,10 +281,10 @@ layout: default
                 <p>Donec malesuada nisl a tristique fermentum. Proin pretium tristique nunc, ut porttitor magna imperdiet nec. Duis sit amet egestas nibh. Nulla quam erat, iaculis a ipsum a, vulputate convallis tortor. Curabitur posuere pulvinar tempus. Nulla imperdiet elit a aliquam luctus. Donec convallis, nunc non egestas pellentesque, lorem arcu ullamcorper felis, id posuere arcu dolor sed velit. Mauris bibendum sem nec erat vehicula volutpat. Integer posuere aliquet molestie. Donec mollis augue eget nibh lobortis dictum. Nunc rutrum a nibh vitae maximus. Suspendisse placerat molestie ipsum, eu scelerisque urna rhoncus ut. Fusce sagittis, sem in sagittis sodales, enim diam pellentesque urna, sit amet faucibus turpis turpis sed sapien. Etiam eleifend varius sem vitae pretium. Praesent pellentesque id diam ut dignissim. Mauris convallis malesuada felis in posuere.</p>
             </div>
             <div class="col-xs-12 col-md-6 col-lg-4 d-flex align-items-stretch">
-                <div class="card w-100 text-white bg-uos-brand-violet text-center">
-                    <h3 class="card-title text-white">Code Clinics</h3>
-                    <p>Work with an expert for 30 mins on your code.</p>
-                    <a href="/support/code-clinic" class="btn btn-dark" style="margin-top:auto;">Book</a>
+                <div class="card w-100 text-white bg-uos-dark-violet text-center">
+                    <h3 class="card-title mt-4 text-white">Code Clinics</h3>
+                    <p class="mt-auto">Work with an expert for 30 mins on your code.</p>
+                    <a href="/support/code-clinic" class="btn btn-dark mt-auto">Book a code clinic</a>
                 </div>
             </div>
         </div>
@@ -307,6 +306,14 @@ layout: default
                     <a href="https://groups.google.com/a/sheffield.ac.uk/g/rse-group">mailing list</a>.
                 </p>
 
+
+                <p>
+                    <a href="/blog">Blog</a>
+                </p>
+
+                <p>
+                    <a href="/newsletter">Newsletter</a>
+                </p>
             </div>
         </div>
     </div>
