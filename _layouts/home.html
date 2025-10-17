@@ -10,7 +10,7 @@ layout: default
 {{ site.event_limit | default: 10 }}
 {% endcapture %}
 
-{% assign newsletters = (site.newsletters | sort: 'date' | reverse) %}
+{% assign newsletters = site.newsletters | sort: 'date' | reverse %}
 {% assign newsletter_0 = newsletters[0] %}
 {% assign blog_post_0 = site.posts[0] %}
 {% assign blog_post_1 = site.posts[1] %}
