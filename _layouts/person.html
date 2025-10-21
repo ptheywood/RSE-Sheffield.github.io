@@ -22,19 +22,30 @@ layout: default
                     {% if page.image %}
                         <img src="{{page.image}}" alt="Picture of {{page.othernames}} {{page.surname}}" class="card-img-top"/>
                     {% else %}
-                        <img src="/assets/images/willfurnass.png" alt="Placeholder image" class="card-img-top"/>
+                        {% assign initials = "" %}
+                        {% for word in page.othernames %}
+                            {% assign first_letter = word | slice: 0 %}
+                            {% assign initials = initials | append: first_letter %}
+                        {% endfor %}
+                        {% for word in page.surname %}
+                            {% assign first_letter = word | slice: 0 %}
+                            {% assign initials = initials | append: first_letter %}
+                        {% endfor %}
+                        <svg width="100" height="100" viewbox="0 0 100 100" class=" card-img-top img-fluid" style="color: var(--uos-wave-white); background: var(--uos-dark-violet)">
+                            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="currentColor">{{ initials }}</text>    
+                        </svg>
                     {% endif %}
-                    <div class="card-body p-2">
-                        {% if page.links %}
+                    {% if page.links %}
+                        <div class="card-body p-2">
                             <ul style="padding-left: 0.5em; list-style: none">
-                            {% for link in page.links %}
-                                {% if link.label and link.url %}
-                                <li><a href="{{ link.url }}">{{ link.label }}</a></li>
-                                {% endif %}
-                            {% endfor %}
-                        </ul>
-                        {% endif %}
-                    </div>
+                                {% for link in page.links %}
+                                    {% if link.label and link.url %}
+                                    <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+                                    {% endif %}
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    {% endif %}
                 </div>
             </div>
         </div>
