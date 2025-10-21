@@ -82,6 +82,7 @@ layout: default
                         <li data-target="#home-carousel" data-slide-to="1"></li>
                         <li data-target="#home-carousel" data-slide-to="2"></li>
                         <li data-target="#home-carousel" data-slide-to="3"></li>
+                        <li data-target="#home-carousel" data-slide-to="4"></li>
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -94,25 +95,11 @@ layout: default
                         <div class="carousel-item">
                             <!-- <img src="/assets/images/logo/rse-logoonly-stroke.png" class="d-block" alt="..."> -->
                             <div class="carousel-caption d-block">
-                                <h5>{{newsletter_0.date | date: "%B %Y"}} newsletter</h5>
-                                <p>Read the latest University of Sheffield Research Software Engineering Community Newsletter</p>
-                                <p>
-                                    {% if newsletter_0.editor %}
-                                    <span>
-                                        <img class="align-self-center mr-2" src="/assets/images/icons/icons8-person-50.png" width="20" alt="Posted By"/>
-                                        <span class="media-body"><strong>{{ newsletter_0.editor }}</strong></span>
-                                    </span>
-                                    {% endif %}
-                                    {% if newsletter_0.date %}
-                                    <br />
-                                    <span>
-                                        <img class="align-self-center mr-2" src="/assets/images/icons/icons8-watch-50.png" width="20" alt="Date"/>
-                                        <span class="media-body"><strong>{{ newsletter_0.date | date: "%-d %B %Y" }}</strong></span>
-                                    </span>
-                                    {% endif %}
-                                </p>
-                                <a href="{{ newsletter_0.url }}" class="btn btn-uos-electric-violet">Read more</a>
-                                <a href="/newsletters/" class="btn btn-dark">All Newsletters</a>
+                                <h5>Events</h5>
+                                <p>We do events...</p>
+                                <p>Hard to include the next upcoming event in a slide here on a static site. Probably should just have generic text and then could use js to insert an event if there are any in the future?</p>
+                                
+                                <a href="/events/" class="btn btn-dark">All Events</a>
                             </div>
                         </div>
                         <div class="carousel-item">
@@ -165,6 +152,30 @@ layout: default
 
                                 <a href="{{ blog_post_1.url | relative_url }}"" class="btn btn-uos-electric-violet">Read More</a>
                                 <a href="/newsletters/" class="btn btn-dark">All Blog articles</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <!-- <img src="/assets/images/logo/rse-logoonly-stroke.png" class="d-block" alt="..."> -->
+                            <div class="carousel-caption d-block">
+                                <h5>{{newsletter_0.date | date: "%B %Y"}} newsletter</h5>
+                                <p>Read the latest University of Sheffield Research Software Engineering Community Newsletter</p>
+                                <p>
+                                    {% if newsletter_0.editor %}
+                                    <span>
+                                        <img class="align-self-center mr-2" src="/assets/images/icons/icons8-person-50.png" width="20" alt="Posted By"/>
+                                        <span class="media-body"><strong>{{ newsletter_0.editor }}</strong></span>
+                                    </span>
+                                    {% endif %}
+                                    {% if newsletter_0.date %}
+                                    <br />
+                                    <span>
+                                        <img class="align-self-center mr-2" src="/assets/images/icons/icons8-watch-50.png" width="20" alt="Date"/>
+                                        <span class="media-body"><strong>{{ newsletter_0.date | date: "%-d %B %Y" }}</strong></span>
+                                    </span>
+                                    {% endif %}
+                                </p>
+                                <a href="{{ newsletter_0.url }}" class="btn btn-uos-electric-violet">Read more</a>
+                                <a href="/newsletters/" class="btn btn-dark">All Newsletters</a>
                             </div>
                         </div>
                     </div>
