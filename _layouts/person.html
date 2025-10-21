@@ -4,7 +4,7 @@ layout: default
 <section class="section offset-header flex-fill" >
     <div class="container">
         <div class="row">
-            <div class="col-12" markdown=1>
+            <div class="col-12 col-md-8" markdown=1>
 
                 {% if page.othernames and page.surname %}
                     <h2><a href="{{page.url}}">{{page.othernames}} {{page.surname}}</a></h2>
@@ -16,6 +16,26 @@ layout: default
 
                 {{ content }}
 
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="card w-100">
+                    {% if page.image %}
+                        <img src="{{page.image}}" alt="Picture of {{page.othernames}} {{page.surname}}" class="card-img-top"/>
+                    {% else %}
+                        <img src="/assets/images/willfurnass.png" alt="Placeholder image" class="card-img-top"/>
+                    {% endif %}
+                    <div class="card-body p-2">
+                        {% if page.links %}
+                            <ul style="padding-left: 0.5em; list-style: none">
+                            {% for link in page.links %}
+                                {% if link.label and link.url %}
+                                <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </div>
+                </div>
             </div>
         </div>
     </div>
