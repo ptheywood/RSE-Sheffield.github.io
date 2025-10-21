@@ -15,6 +15,8 @@ links:
       label: <i class="fab fa-github" aria-label="GitHub"></i>&nbsp;@ptheywood
     - url: "https://ptheywood.uk"
       label: <i class="fas fa-link" aria-label="Website"></i>&nbsp;ptheywood.uk
+    - url: "https://orcid.org/0000-0001-9277-8394"
+      label: <img src="/assets/images/ORCID-iD_icon_vector.svg" width="16px" alt="ORCID iD"/>&nbsp;0000-0001-9277-8394
 
 ---
 
