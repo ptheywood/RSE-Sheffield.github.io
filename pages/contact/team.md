@@ -23,7 +23,7 @@ Current members of the Research Software Engineering team are listed below. Prev
 <div class="people-list row">
 {% for person in people %}
   {% if person.alumnum == false %}
-    <div class="col-sm-12 col-md-6 col-lg-4 mb-4 d-flex">
+    <div class="col-12 col-sm-6 col-lg-4 mb-4 d-flex">
       <div class="card w-100">
         <a href="{{person.url}}" class="d-block w-100">
         {% if person.image %}
