@@ -6,7 +6,12 @@ published: true
 othernames: Matthew
 surname: Leach
 role: Research Software Engineer in Complex Systems
-
+image:
+links:
+    - url: mailto:m.leach@sheffield.ac.uk
+      label: <i class="fas fa-envelope" aria-label="Email"></i>&nbsp;m.leach@sheffield.ac.uk
+    - url: https://github.com/MILeach
+      label: <i class="fab fa-github" aria-label="GitHub"></i>&nbsp;@MILeach
 ---
 
 Matt is a Research Software Engineer in Complex Systems.
