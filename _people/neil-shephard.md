@@ -6,6 +6,20 @@ published: true
 othernames: Neil
 surname: Shephard
 role: Research Software Engineer
+image:
+links:
+    - url: mailto:n.shephard@sheffield.ac.uk
+      label: <i class="fas fa-envelope" aria-label="Email"></i>&nbsp;n.shephard@sheffield.ac.uk
+    - url: https://github.com/ns-rse
+      label: <i class="fab fa-github" aria-label="GitHub"></i>&nbsp;@ns-rse
+    - url: "https://orcid.org/0000-0001-8301-6857"
+      label: <img src="/assets/images/ORCID-iD_icon_vector.svg" width="16px" alt="ORCID iD"/>&nbsp;0000-0001-8301-6857
+    - url: "https://blog.nshephard.dev"
+      label: <i class="fas fa-link" aria-label="Link"></i>&nbsp;Blog
+    - url: "[blog.nshephard.dev](https://wiki.nshephard.dev/)"
+      label: <i class="fas fa-link" aria-label="Link"></i>&nbsp;Web
+    - url: "[blog.nshephard.dev](https://fosstodon.org/@nshephard)"
+      label: <i class="fas fa-link" aria-label="Link"></i>&nbsp;Mastodon
 ---
 
 Neil has taken a convoluted path to reach his current role as research software engineer. After completing his
@@ -36,12 +50,3 @@ Interests include:
 * Python, R and Bash
 * Evolutionary Genetics
 * Emacs and Org-mode
-
-Contact:
-
-* Email: n.shephard (at) sheffield.ac.uk
-* GitHub: [@ns-rse](https://github.com/ns-rse/)
-* ORCID: [0000-0001-8301-6857](https://orcid.org/0000-0001-8301-6857)
-* Blog: [blog.nshephard.dev](https://blog.nshephard.dev/)
-* Web: [nshephard.dev](https://wiki.nshephard.dev/)
-* Mastodon: [@nshephard@fosstodon.org](https://fosstodon.org/@nshephard)
