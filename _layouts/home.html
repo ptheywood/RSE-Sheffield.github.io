@@ -43,7 +43,8 @@ layout: default
         </div>
     </div>
 </section>
-<section class="section">
+
+<!-- <section class="section">
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
@@ -75,7 +76,6 @@ layout: default
                         filter: invert(100%);
                     }
                 </style>
-                <!-- automove carousels are not great for accessibility. -->
                 <div id="home-carousel" class="carousel slide" data-ride="carousel" data-interval="10000" data-pause="false">
                     <ol class="carousel-indicators">
                         <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
@@ -93,7 +93,6 @@ layout: default
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <!-- <img src="/assets/images/logo/rse-logoonly-stroke.png" class="d-block" alt="..."> -->
                             <div class="carousel-caption d-block">
                                 <h5>Events</h5>
                                 <p>We do events...</p>
@@ -103,7 +102,6 @@ layout: default
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <!-- <img src="/assets/images/logo/rse-logoonly-stroke.png" class="d-block" alt="..."> -->
                             <div class="carousel-caption d-block">
                                 <h5>Blog: {{ blog_post_0.title }}</h5>
                                 <p>
@@ -155,7 +153,6 @@ layout: default
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <!-- <img src="/assets/images/logo/rse-logoonly-stroke.png" class="d-block" alt="..."> -->
                             <div class="carousel-caption d-block">
                                 <h5>{{newsletter_0.date | date: "%B %Y"}} newsletter</h5>
                                 <p>Read the latest University of Sheffield Research Software Engineering Community Newsletter</p>
@@ -192,66 +189,59 @@ layout: default
             </div>
         </div>
     </div>
-</section>
-
-<!-- <section class="section">
-    <div class="container">
-        <div class="row mt-3 mb-3">
-            <div class="col-md-4 mb-4 mb-md-0 d-flex align-items-stretch">
-                <div class="card w-100 text-white bg-uos-powder-violet text-center">
-                    <h3 class="card-title">Projects</h3>
-                    <p>Add fractional RSE time from the team to your funding application</p>
-                    <a href="mailto:rse@sheffield.ac.uk" class="btn btn-dark" style="margin-top:auto;">Email rse@sheffield.ac.uk</a>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4 mb-md-0 d-flex align-items-stretch">
-                <div class="card w-100 text-white bg-uos-dark-violet text-center">
-                    <h3 class="card-title text-white">FAIR² for research software</h3>
-                    <p>Dedicated training on how to apply FAIR principles to research software, enabling you to make your research more open.</p>
-                    <a href="/training/fair4rs" class="btn btn-dark" style="margin-top:auto;">FAIR² 4 RS</a>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4 mb-md-0 d-flex align-items-stretch">
-                <div class="card w-100 text-white bg-uos-powder-violet text-center">
-                    <h3 class="card-title">Code Clinics</h3>
-                    <p>Work with an expert for 30 mins on your code.</p>
-                    <a href="/support/code-clinic" class="btn btn-dark" style="margin-top:auto;">Book a code clinic</a>
-                </div>
-            </div>
-
-            <div class="col-md-12 mb-4 mb-md-4 mt-md-4 text-center">
-                <div class="card w-100 text-dark bg-uos-powder-blue text-center">
-                <h3 class="card-title">Community</h3>
-                <p>
-                    Connect with us and researchers who code on <a href="https://fosstodon.org/@RSE_Sheffield" rel="me">Mastodon</a>,
-                    <a href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2F127.0.0.1%3A4000%2F&ref_src=twsrc%5Etfw%7Ctwcamp%5Ebuttonembed%7Ctwterm%5Efollow%7Ctwgr%5ERSE_Sheffield&region=follow_link&screen_name=RSE_Sheffield">Twitter</a>,
-                    <a href="/community/slack">Slack</a>,
-                    <a href="https://github.com/orgs/RSE-Sheffield">GitHub</a> or the RSE Community
-                    <a href="https://groups.google.com/a/sheffield.ac.uk/g/rse-group">mailing list</a>.
-                </p>
-            </div>
-        </div>
-    </div>
 </section> -->
 
-<!-- events in carousel would need emitting as json and then inserting a carousel element for the most recent event? Coud replace a generic one that is for events. -->
-<!-- <div class="col-md-6">
-    {% include events_list_top10.html post_limit=event_limit %}
+<section class="section">
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="jumbotron">
+                    <h4 class="h1">Events</h4>
+                    <p class="lead">We do events...</p>
+                    <hr class="my-4">
+                    <p>Hard to include the next upcoming event in a slide here on a static site. Probably should just have generic text and then could use js to insert an event if there are any in the future?</p>
+                    <p class="lead">
+                        <a class="btn btn-primary btn-lg" href="/events/" role="button">All Events</a>
+                    </p>
+                </div>
+            </div>
+            <!-- <div class="col-sm-12">
+                <div class="jumbotron">
+                    <h4 class="h1">{{newsletter_0.date | date: "%B %Y"}} newsletter</h4>
+                    <p class="lead">Read the latest University of Sheffield Research Software Engineering Community Newsletter</p>
+                    <p>
+                        {% if newsletter_0.editor %}
+                        <span>
+                            <img class="align-self-center mr-2" src="/assets/images/icons/icons8-person-50.png" width="20" alt="Posted By"/>
+                            <span class="media-body"><strong>{{ newsletter_0.editor }}</strong></span>
+                        </span>
+                        {% endif %}
+                        {% if newsletter_0.date %}
+                        <br />
+                        <span>
+                            <img class="align-self-center mr-2" src="/assets/images/icons/icons8-watch-50.png" width="20" alt="Date"/>
+                            <span class="media-body"><strong>{{ newsletter_0.date | date: "%-d %B %Y" }}</strong></span>
+                        </span>
+                        {% endif %}
+                    </p>
 
-    <p>
-        <a href="/events/">All of our upcoming and previous events >></a>
-    </p>
-</div> -->
+                    <hr / >
 
+                    <p class="lead">
+                        <a href="{{ newsletter_0.url }}" class="btn btn-uos-electric-violet">Read more</a>
+                        <a href="/newsletters/" class="btn btn-dark">All Newsletters</a>
+                    </p>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</section>
 
 <section class="section">
     <div class="container">
-        
         <div class="row my-2">
             <div class="col-12 col-md-6 col-lg-8">
-                <h2>Projects</h2>
+                <h2>Work with us</h2>
                 <p>
                     The RSE team can collaborate with you to help improve your research software.
                     We have a pool of <a href="/contact/team">expert staff</a> to ensure that you can deliver excellent research software engineering on your research projects (see <a href="/collaboration/projects/">example projects</a> and <a href="/collaboration/testimonials/">testimonials</a>).
@@ -277,7 +267,7 @@ layout: default
     <div class="container">
         
         <div class="row my-2">
-            <div class="col-12 col-md-6 col-lg-8">
+            <div class="col-12 col-md-6 col-lg-8 d-flex flex-column align-items-stretch">
                 <h2>Training</h2>
                 <p>
                     People working with code for research, whether they are writing their first script to managing a complex software project need skills that academic training might not provide.
@@ -285,7 +275,7 @@ layout: default
                 <p>
                     The RSE Team's aspiration is that all researchers who need these skills should be given the opportunity to learn them, either from the RSE Team, our University of Sheffield colleagues or other sources.
                 </p>
-                <p>
+                <p class="mt-auto mb-0">
                     <a href="/training" class="btn btn-primary">Find out more about our Training provision</a>
                 </p>
             </div>
@@ -328,7 +318,7 @@ layout: default
 <section class="section">
     <div class="container">
         <div class="row my-2">
-            <div class="col-12">
+            <div class="col-12 col-md-6 col-lg-8">
                 <h2>Community</h2>
                 <p>                    
                     The RSE group supports research software developers (any researcher who develops software) and research software engineers
@@ -350,6 +340,104 @@ layout: default
                 <p>
                     @todo - <a href="/newsletter">Newsletter</a>
                 </p>
+
+                <p>
+                    @todo - <a href="/events">Events</a>
+                </p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 order-md-first d-flex align-items-stretch">
+                <div class="card w-100 text-white bg-uos-peak-green text-center">
+                    <h3 class="card-title mt-4 text-white">{{newsletter_0.date | date: "%B %Y"}} Newsletter</h3>
+                    <div class="mt-auto">
+                        <p>Read the latest University of Sheffield Research Software Engineering Community Newsletter</p>
+                        <p">
+                            {% if newsletter_0.editor %}
+                            <span>
+                                <img class="align-self-center mr-2" src="/assets/images/icons/icons8-person-50.png" width="20" alt="Posted By"/>
+                                <span class="media-body"><strong>{{ newsletter_0.editor }}</strong></span>
+                            </span>
+                            {% endif %}
+                            {% if newsletter_0.date %}
+                            <br />
+                            <span>
+                                <img class="align-self-center mr-2" src="/assets/images/icons/icons8-watch-50.png" width="20" alt="Date"/>
+                                <span class="media-body"><strong>{{ newsletter_0.date | date: "%-d %B %Y" }}</strong></span>
+                            </span>
+                            {% endif %}
+                        </p>
+                    </div>
+
+                    <div class="btn-group btn-group-justified mt-auto" role="group">
+                        <a href="{{ newsletter_0.url }}" class="btn btn-uos-electric-violet col-12 col-md-6">Read more</a>
+                        <a href="/newsletters/" class="btn btn-dark col-12 col-md-6">All Newsletters</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-4">
+            <div class="col-sm-12">
+                <div class="jumbotron">
+                    <h4 class="h1">Featured Blog: {{ blog_post_0.title }}</h4>
+                    <p class="lead">
+                        {% if blog_post_0.author %}
+                        <span>
+                            <img class="align-self-center mr-2" src="/assets/images/icons/icons8-person-50.png" width="20" alt="Posted By"/>
+                            <span class="media-body"><strong>{{ blog_post_0.author }}</strong></span>
+                        </span>
+                        {% endif %}
+                        {% if blog_post_0.date %}
+                        <br />
+                        <span>
+                            <img class="align-self-center mr-2" src="/assets/images/icons/icons8-watch-50.png" width="20" alt="Date"/>
+                            <span class="media-body"><strong>{{ blog_post_0.date | date: "%-d %B %Y" }}</strong></span>
+                        </span>
+                        {% endif %}
+                    </p>
+                    
+                    <hr />
+
+                    <p>{{blog_post_0.excerpt }}</p>
+                    <p class="lead">
+                        <a href="{{ blog_post_0.url | relative_url }}"" class="btn btn-uos-electric-violet">Read More</a>
+                        <a href="/newsletters/" class="btn btn-dark">All Blog articles</a>
+                    </p>
+                </div>
+            </div>
+            <!-- <div class="col-sm-12">
+                <div class="jumbotron">
+                    <h4 class="h1">Featured Blog: {{ blog_post_1.title }}</h4>
+                    <p class="lead">
+                        {% if blog_post_1.author %}
+                        <span>
+                            <img class="align-self-center mr-2" src="/assets/images/icons/icons8-person-50.png" width="20" alt="Posted By"/>
+                            <span class="media-body"><strong>{{ blog_post_1.author }}</strong></span>
+                        </span>
+                        {% endif %}
+                        {% if blog_post_1.date %}
+                        <br />
+                        <span>
+                            <img class="align-self-center mr-2" src="/assets/images/icons/icons8-watch-50.png" width="20" alt="Date"/>
+                            <span class="media-body"><strong>{{ blog_post_1.date | date: "%-d %B %Y" }}</strong></span>
+                        </span>
+                        {% endif %}
+                    </p>
+
+                    <hr />
+
+                    <p>{{blog_post_1.excerpt }}</p>
+
+                    <p class="lead">
+                        <a href="{{ blog_post_1.url | relative_url }}"" class="btn btn-uos-electric-violet">Read More</a>
+                        <a href="/newsletters/" class="btn btn-dark">All Blog articles</a>
+                    </p>
+                </div>
+            </div> -->
+        </div>
+        <div class="row my-2">
+            <div class="col-12">
+                <div style="height: 400px; overflow: hidden;">
+                    <img src="/assets/images/2025-09-29-RSECon25.png" class="d-block" alt="..." style="height: 400px; width:100%; object-fit: cover;">
+                </div>
             </div>
         </div>
     </div>
