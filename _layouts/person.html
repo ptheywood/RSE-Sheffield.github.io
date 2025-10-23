@@ -1,10 +1,5 @@
 ---
 layout: default
-
-placeholder_colours:
-  - background: "var(--uos-dark-violet)"
-    color: "var(--uos-wave-white)"
-
 ---
 <section class="section offset-header flex-fill" >
     <div class="container">
@@ -23,8 +18,8 @@ placeholder_colours:
 
             </div>
             <div class="col-12 col-md-4">
-                {% assign colours = page.placeholder_colours[0] %}
-                {% include team_member_card.html person=page colours=colours %}
+                {% assign colours = placeholder_colours %}
+                {% include team_member_card.html person=page placeholder_color="var(--uos-wave-white)" placeholder_background="var(--uos-dark-violet)" %}
             </div>
         </div>
     </div>
