@@ -19,23 +19,23 @@
     {% endif %}
 
     </a>
-    <div class="card-body p-2">
-        {% if include.show_name and include.person.othernames and include.person.surname%}
-            <h3><a href="{{include.person.url}}">{{include.person.othernames}} {{include.person.surname}}</a></h3>
-        {% endif %}
-        {% if include.show_role and include.person.role%}
-            <p><strong>{{include.person.role}}</strong></p>
-        {% endif %}
-        {% if include.person.links %}
-            <ul class="list-unstyled">
-                {% for link in include.person.links %}
-                    {% if link.label and link.url %}
-                        <li><a href="{{ link.url }}">{{ link.label }}</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-        {% endif %}
-    </div>
-    <!-- @todo - stretched link might be bs5 only?  -->
-    <!-- <a href="{{include.person.url}}" class="btn btn-primary mt-auto stretched-link">Read more</a> -->
+    {% if include.show_name or include.show_role or include.person.links %}
+        <div class="card-body p-2">
+            {% if include.show_name and include.person.othernames and include.person.surname%}
+                <h3><a href="{{include.person.url}}">{{include.person.othernames}} {{include.person.surname}}</a></h3>
+            {% endif %}
+            {% if include.show_role and include.person.role%}
+                <p><strong>{{include.person.role}}</strong></p>
+            {% endif %}
+            {% if include.person.links %}
+                <ul class="list-unstyled">
+                    {% for link in include.person.links %}
+                        {% if link.label and link.url %}
+                            <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+    {% endif %}
 </div>
