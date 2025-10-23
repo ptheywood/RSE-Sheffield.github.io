@@ -6,8 +6,7 @@ published: true
 othernames: Robert
 surname: Chisholm
 role: Research Software Engineer
-
-image: https://avatars.githubusercontent.com/u/742154
+image:
 links:
     - url: mailto:r.chisholm@sheffield.ac.uk
       label: <i class="fas fa-envelope" aria-label="Email"></i>&nbsp;r.chisholm@sheffield.ac.uk

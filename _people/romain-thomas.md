@@ -6,8 +6,7 @@ published: true
 othernames: Romain
 surname: Thomas
 role: Head of group
-
-image: https://avatars.githubusercontent.com/u/142999926
+image:
 links:
     - url: mailto:romain.thomas@sheffield.ac.uk
       label: <i class="fas fa-envelope" aria-label="Email"></i>&nbsp;romain.thomas@sheffield.ac.uk
