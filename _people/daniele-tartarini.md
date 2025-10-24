@@ -13,6 +13,16 @@ links:
         class: "fas fa-envelope"
         a11y: "Email"
       label: d.tartarini@sheffield.ac.uk
+    - url: https://github.com/tartarini
+      icon:
+        class: "fab fa-github"
+        a11y: "GitHub"
+      label: "@tartarini"
+    - url: "https://orcid.org/0000-0002-8913-0156"
+      image:
+        src: "/assets/images/ORCID-iD_icon_vector.svg"
+        a11y: "ORCID iD"
+      label: 0000-0002-8913-0156
 extra_links:
     - url: https://twitter.com/dany_tartarini
       icon:
