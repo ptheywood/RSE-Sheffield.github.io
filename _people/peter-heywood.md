@@ -19,8 +19,10 @@ links:
 
 ---
 
-Peter is a Research Software Engineer ...
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam efficitur elementum sollicitudin. Mauris nec leo consequat, fermentum quam vel, fringilla felis. Nulla facilisi. Maecenas venenatis lacus in eros vulputate accumsan. Maecenas vitae quam sit amet dui dignissim porttitor. Cras sollicitudin ac arcu vitae laoreet. Suspendisse tempor lacinia consectetur. 
+Peter is a Research Software Engineer who joined the RSE team in 2018.
+He has a background is in Computer Science, having completed his MComp and PhD at the University of Sheffield.
 
-Nam blandit tortor a nisl volutpat dignissim. Morbi consequat lorem mi, et dapibus diam ultrices nec. Mauris aliquet nec ante aliquam mollis. Curabitur laoreet accumsan lobortis. Aenean fermentum libero augue, ac fringilla ipsum finibus vitae. Morbi lacus lorem, aliquet vel rhoncus a, consequat quis dolor. Quisque vestibulum augue nec neque ultricies, vitae volutpat massa hendrerit. Praesent dictum tortor in magna semper ultricies. Integer in vulputate massa.
+Peter's core focus is in performance optimiastion, specializing in GPU (Graphics Processing Unit) accelerated computing, High Performance Computing (HPC), and Agent-Based Modelling (ABM).
+
+He is a core developer and maintainer of [FLAME GPU](https://flamegpu.com), a software framework that enables researchers to run high-performance, large-scale agent-based simulations while abstracting the complexities of GPU programming away from the modeller.
