@@ -29,7 +29,7 @@
             {% endif %}
             <!-- liquid if statements don't support brackets. -->
             {% if include.person.links or include.person.extra_links and include.show_extra_links %}
-                <ul class="list-unstyled">
+                <ul class="list-unstyled mb-0">
                     {% for link in include.person.links %}
                         {% if link.label and link.url %}
                             <li><a href="{{ link.url }}">
