@@ -9,13 +9,26 @@ role: Research Software Engineer
 image:
 links:
     - url: mailto:t.d.james@sheffield.ac.uk
-      label: <i class="fas fa-envelope" aria-label="Email"></i>&nbsp;t.d.james@sheffield.ac.uk
+      icon: 
+        class: "fas fa-envelope"
+        a11y: "Email"
+      label: t.d.james@sheffield.ac.uk
     - url: https://github.com/tdjames1
-      label: <i class="fab fa-github" aria-label="GitHub"></i>&nbsp;@tdjames1
-    - url: "https://tdjames1.github.io"
-      label: <i class="fas fa-link" aria-label="Website"></i>&nbsp;Web
+      icon:
+        class: "fab fa-github"
+        a11y: "GitHub"
+      label: "@tdjames1"
     - url: "https://orcid.org/0000-0003-1363-4742"
-      label: <img src="/assets/images/ORCID-iD_icon_vector.svg" width="16px" alt="ORCID iD"/>&nbsp;0000-0003-1363-4742
+      image:
+        src: "/assets/images/ORCID-iD_icon_vector.svg"
+        a11y: "ORCID iD"
+      label: 0000-0003-1363-4742
+extra_links:
+    - url: "https://tdjames1.github.io"
+      icon:
+        class: "fas fa-link"
+        a11y: "Link"
+      label: "Web"
 ---
 
 Tamora joined the RSE team in November 2023.  She began her career in

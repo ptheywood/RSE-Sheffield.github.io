@@ -9,15 +9,31 @@ role: Research Software Engineer
 image:
 links:
     - url: mailto:m.foster@sheffield.ac.uk
-      label: <i class="fas fa-envelope" aria-label="Email"></i>&nbsp;m.foster@sheffield.ac.uk
+      icon: 
+        class: "fas fa-envelope"
+        a11y: "Email"
+      label: m.foster@sheffield.ac.uk
     - url: https://github.com/jmafoster1
-      label: <i class="fab fa-github" aria-label="GitHub"></i>&nbsp;@jmafoster1
+      icon:
+        class: "fab fa-github"
+        a11y: "GitHub"
+      label: "@jmafoster1"
     - url: "https://orcid.org/0000-0001-8233-9873"
-      label: <img src="/assets/images/ORCID-iD_icon_vector.svg" width="16px" alt="ORCID iD"/>&nbsp;0000-0001-8233-9873
+      image:
+        src: "/assets/images/ORCID-iD_icon_vector.svg"
+        a11y: "ORCID iD"
+      label: 0000-0001-8233-9873
+extra_links:
     - url: "https://scholar.google.com/citations?user=4fTJseoAAAAJ"
-      label: <i class="fas fa-link" aria-label="Website"></i>&nbsp;Google Scholar
+      icon:
+        class: "fas fa-link"
+        a11y: "Link"
+      label: "Google Scholar"
     - url: "https://jmafoster1.github.io"
-      label: <i class="fas fa-link" aria-label="Website"></i>&nbsp;Personal Webpage
+      icon:
+        class: "fas fa-link"
+        a11y: "Link"
+      label: "Personal Webpage"
 ---
 
 Michael joined the RSE team in October 2024.

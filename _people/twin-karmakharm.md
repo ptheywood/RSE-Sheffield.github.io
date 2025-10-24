@@ -9,11 +9,21 @@ role: Senior Research Software Engineer
 iamge:
 links:
     - url: mailto:t.karmakharm@sheffield.ac.uk
-      label: <i class="fas fa-envelope" aria-label="Email"></i>&nbsp;t.karmakharm@sheffield.ac.uk
+      icon: 
+        class: "fas fa-envelope"
+        a11y: "Email"
+      label: t.karmakharm@sheffield.ac.uk
     - url: https://github.com/twinkarma
-      label: <i class="fab fa-github" aria-label="GitHub"></i>&nbsp;@twinkarma
+      icon:
+        class: "fab fa-github"
+        a11y: "GitHub"
+      label: "@twinkarma"
+extra_links:
     - url: "https://twin.uk.com"
-      label: <i class="fas fa-link" aria-label="Website"></i>&nbsp;twin.uk.com
+      icon:
+        class: "fas fa-link"
+        a11y: "Link"
+      label: "twin.uk.com"
 ---
 <a name="twin"></a>
 

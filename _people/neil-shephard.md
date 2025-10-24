@@ -9,17 +9,36 @@ role: Research Software Engineer
 image:
 links:
     - url: mailto:n.shephard@sheffield.ac.uk
-      label: <i class="fas fa-envelope" aria-label="Email"></i>&nbsp;n.shephard@sheffield.ac.uk
+      icon: 
+        class: "fas fa-envelope"
+        a11y: "Email"
+      label: n.shephard@sheffield.ac.uk
     - url: https://github.com/ns-rse
-      label: <i class="fab fa-github" aria-label="GitHub"></i>&nbsp;@ns-rse
+      icon:
+        class: "fab fa-github"
+        a11y: "GitHub"
+      label: "@ns-rse"
     - url: "https://orcid.org/0000-0001-8301-6857"
-      label: <img src="/assets/images/ORCID-iD_icon_vector.svg" width="16px" alt="ORCID iD"/>&nbsp;0000-0001-8301-6857
+      image:
+        src: "/assets/images/ORCID-iD_icon_vector.svg"
+        a11y: "ORCID iD"
+      label: 0000-0001-8301-6857
+extra_links:
     - url: "https://blog.nshephard.dev"
-      label: <i class="fas fa-link" aria-label="Link"></i>&nbsp;Blog
-    - url: "[blog.nshephard.dev](https://wiki.nshephard.dev/)"
-      label: <i class="fas fa-link" aria-label="Link"></i>&nbsp;Web
-    - url: "[blog.nshephard.dev](https://fosstodon.org/@nshephard)"
-      label: <i class="fas fa-link" aria-label="Link"></i>&nbsp;Mastodon
+      icon:
+        class: "fas fa-link"
+        a11y: "Link"
+      label: "Blog"
+    - url: "https://wiki.nshephard.dev/"
+      icon:
+        class: "fas fa-link"
+        a11y: "Link"
+      label: "Web"
+    - url: "https://fosstodon.org/@nshephard"
+      icon:
+        class: "fas fa-link"
+        a11y: "Link"
+      label: "Mastodon"
 ---
 
 Neil has taken a convoluted path to reach his current role as research software engineer. After completing his

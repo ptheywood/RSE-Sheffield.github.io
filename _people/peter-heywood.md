@@ -8,14 +8,27 @@ surname: Heywood
 role: Research Software Engineer
 image:
 links:
-    - url: mailto:p.heywood@sheffield.ac.uk
-      label: <i class="fas fa-envelope" aria-label="Email"></i>&nbsp;p.heywood@sheffield.ac.uk
-    - url: https://github.com/ptheywood
-      label: <i class="fab fa-github" aria-label="GitHub"></i>&nbsp;@ptheywood
-    - url: "https://ptheywood.uk"
-      label: <i class="fas fa-link" aria-label="Website"></i>&nbsp;ptheywood.uk
+    - url: "mailto:p.heywood@sheffield.ac.uk"
+      icon: 
+        class: "fas fa-envelope"
+        a11y: "Email"
+      label: "p.heywood@sheffield.ac.uk"
+    - url: "https://github.com/ptheywood"
+      icon:
+        class: "fab fa-github"
+        a11y: "GitHub"
+      label: "@ptheywood"
     - url: "https://orcid.org/0000-0001-9277-8394"
-      label: <img src="/assets/images/ORCID-iD_icon_vector.svg" width="16px" alt="ORCID iD"/>&nbsp;0000-0001-9277-8394
+      image:
+        src: "/assets/images/ORCID-iD_icon_vector.svg"
+        a11y: "ORCID iD"
+      label: 0000-0001-9277-8394
+extra_links:
+    - url: "https://ptheywood.uk"
+      icon:
+        class: "fas fa-link"
+        a11y: "Link"
+      label: "Personal Website"
 
 ---
 

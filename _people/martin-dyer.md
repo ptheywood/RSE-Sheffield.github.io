@@ -9,14 +9,26 @@ role: Research Software Engineer
 image:
 links:
     - url: mailto:martin.dyer@sheffield.ac.uk
-      label: <i class="fas fa-envelope" aria-label="Email"></i>&nbsp;martin.dyer@sheffield.ac.uk
+      icon: 
+        class: "fas fa-envelope"
+        a11y: "Email"
+      label: martin.dyer@sheffield.ac.uk
     - url: https://github.com/martinjohndyer
-      label: <i class="fab fa-github" aria-label="GitHub"></i>&nbsp;@martinjohndyer
-    - url: "https://martindyer.net"
-      label: <i class="fas fa-link" aria-label="Website"></i>&nbsp;martindyer.net
+      icon:
+        class: "fab fa-github"
+        a11y: "GitHub"
+      label: "@martinjohndyer"
     - url: "https://orcid.org/0000-0003-3665-5482"
-      label: <img src="/assets/images/ORCID-iD_icon_vector.svg" width="16px" alt="ORCID iD"/>&nbsp;0000-0003-3665-5482
-
+      image:
+        src: "/assets/images/ORCID-iD_icon_vector.svg"
+        a11y: "ORCID iD"
+      label: 0000-0003-3665-5482
+extra_links:
+    - url: "https://martindyer.net"
+      icon:
+        class: "fas fa-link"
+        a11y: "Link"
+      label: martindyer.net
 ---
 
 Martin joined the RSE team in 2024, and is based in the [School of Mathematical and Physical Sciences](https://www.sheffield.ac.uk/mps). He completed his PhD in astronomy at the University of Sheffield in 2020, after which he continued working as a postdoc in the [astronomy group](https://www.sheffield.ac.uk/mps/research/physics/astrophysics) before transitioning to a role as a research software engineer.

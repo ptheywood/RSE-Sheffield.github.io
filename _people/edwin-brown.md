@@ -9,13 +9,26 @@ role: Senior Research Software Engineer
 image:
 links:
     - url: mailto:w.e.brown@sheffield.ac.uk
-      label: <i class="fas fa-envelope" aria-label="Email"></i>&nbsp;w.e.brown@sheffield.ac.uk
+      icon: 
+        class: "fas fa-envelope"
+        a11y: "Email"
+      label: w.e.brown@sheffield.ac.uk
     - url: https://github.com/EdwinB12
-      label: <i class="fab fa-github" aria-label="GitHub"></i>&nbsp;@EdwinB12
-    - url: "https://www.linkedin.com/in/edwin-brown-214471108/"
-      label: <i class="fas fa-link" aria-label="Website"></i>&nbsp;LinkedIn
+      icon:
+        class: "fab fa-github"
+        a11y: "GitHub"
+      label: "@EdwinB12"
     - url: "https://orcid.org/0009-0004-1124-469X"
-      label: <img src="/assets/images/ORCID-iD_icon_vector.svg" width="16px" alt="ORCID iD"/>&nbsp;0009-0004-1124-469X
+      image:
+        src: "/assets/images/ORCID-iD_icon_vector.svg"
+        a11y: "ORCID iD"
+      label: 0009-0004-1124-469X
+extra_links:
+    - url: "https://www.linkedin.com/in/edwin-brown-214471108/"
+      icon:
+        class: "fas fa-link"
+        a11y: "Link"
+      label: "LinkedIn"
 ---
 
 Edwin joined the RSE team in October 2022. He comes from a  background in geophysics following a BSc and MSc in Geophysical Sciences at the University of Leeds. After university, he worked in the private sector, developing machine learning (ML) workflows to solve geophysical imaging and inversion problems.

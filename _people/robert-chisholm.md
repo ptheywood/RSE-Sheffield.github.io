@@ -9,14 +9,26 @@ role: Research Software Engineer
 image:
 links:
     - url: mailto:r.chisholm@sheffield.ac.uk
-      label: <i class="fas fa-envelope" aria-label="Email"></i>&nbsp;r.chisholm@sheffield.ac.uk
-    - url: https://twitter.com/robadob
-      label: <i class="fab fa-twitter" aria-label="Twitter"></i>&nbsp;@robadob
+      icon: 
+        class: "fas fa-envelope"
+        a11y: "Email"
+      label: r.chisholm@sheffield.ac.uk
     - url: https://github.com/robadob
-      label: <i class="fab fa-github" aria-label="GitHub"></i>&nbsp;@robadob
+      icon:
+        class: "fab fa-github"
+        a11y: "GitHub"
+      label: "@robadob"
     - url: "https://orcid.org/0000-0003-3379-9042"
-      label: <img src="/assets/images/ORCID-iD_icon_vector.svg" width="16px" alt="ORCID iD"/>&nbsp;0000-0003-3379-9042
-
+      image:
+        src: "/assets/images/ORCID-iD_icon_vector.svg"
+        a11y: "ORCID iD"
+      label: 0000-0003-3379-9042
+extra_links:
+    - url: https://twitter.com/robadob
+      icon:
+        class: "fab fa-twitter"
+        a11y: "Twitter"
+      label: "@robadob"
 ---
 
 Robert is a Research Software Engineer that previously completed his PhD at the University of Sheffield.

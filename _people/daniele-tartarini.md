@@ -9,11 +9,21 @@ role: Senior Research Software Engineer
 image:
 links:
     - url: mailto:d.tartarini@sheffield.ac.uk
-      label: <i class="fas fa-envelope" aria-label="Email"></i>&nbsp;d.tartarini@sheffield.ac.uk
+      icon: 
+        class: "fas fa-envelope"
+        a11y: "Email"
+      label: d.tartarini@sheffield.ac.uk
+extra_links:
     - url: https://twitter.com/dany_tartarini
-      label: <i class="fab fa-twitter" aria-label="Twitter"></i>&nbsp;@dany_tartarini
+      icon:
+        class: "fab fa-twitter"
+        a11y: "Twitter"
+      label: "@dany_tartarini"
     - url: https://www.linkedin.com/in/danieletartarini/
-      label: <i class="fas fa-link" aria-label="Link"></i>&nbsp;LinkedIn
+      icon:
+        class: "fas fa-link"
+        a11y: "Link"
+      label: "LinkedIn"
 ---
 Daniele joined the RSE team in 2020. He mainly supports:
 

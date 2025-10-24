@@ -27,13 +27,35 @@
             {% if include.show_role and include.person.role%}
                 <p><strong>{{include.person.role}}</strong></p>
             {% endif %}
-            {% if include.person.links %}
+            <!-- liquid if statements don't support brackets. -->
+            {% if include.person.links or include.person.extra_links and include.show_extra_links %}
                 <ul class="list-unstyled">
                     {% for link in include.person.links %}
                         {% if link.label and link.url %}
-                            <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+                            <li><a href="{{ link.url }}">
+                                {% if link.icon %}
+                                    <i class="{{ link.icon.class }}" aria-label="{{ link.icon.a11y }}"></i>
+                                {% elsif link.image %}
+                                    <img src="{{ link.image.src }}" alt="{{ link.image.a11y}}" width="16px" />
+                                {% endif %}
+                                {{ link.label }}
+                            </a></li>
                         {% endif %}
                     {% endfor %}
+                    {% if include.person.extra_links and include.show_extra_links %}
+                        {% for link in include.person.extra_links %}
+                            {% if link.label and link.url %}
+                                <li><a href="{{ link.url }}">
+                                    {% if link.icon %}
+                                        <i class="{{ link.icon.class }}" aria-label="{{ link.icon.a11y }}"></i>
+                                    {% elsif link.image %}
+                                        <img src="{{ link.image.src }}" alt="{{ link.image.a11y}}" width="16px" />
+                                    {% endif %}
+                                    {{ link.label }}
+                                </a></li>
+                            {% endif %}
+                        {% endfor %}
+                    {% endif %}
                 </ul>
             {% endif %}
         </div>
