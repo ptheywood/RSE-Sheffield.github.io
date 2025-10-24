@@ -250,3 +250,10 @@ a:hover {
 a.tag-link.selected, a.filter-link.selected{
     font-weight: bold;
 }
+
+
+/* square images  */
+.img-square-crop {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}

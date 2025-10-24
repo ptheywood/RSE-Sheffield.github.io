@@ -2,7 +2,7 @@
 <div class="card w-100">
     <a href="{{include.person.url}}" class="d-block w-100">
     {% if include.person.image %}
-        <img src="{{include.person.image}}" alt="Picture of {{include.person.othernames}} {{include.person.surname}}" class="card-img-top"/>
+        <img src="{{include.person.image}}" alt="Picture of {{include.person.othernames}} {{include.person.surname}}" class="card-img-top img-square-crop" />
     {% else %}
         {% assign initials = "" %}
         {% for word in include.person.othernames %}
