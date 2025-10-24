@@ -18,6 +18,11 @@ links:
         class: "fab fa-github"
         a11y: "GitHub"
       label: "@twinkarma"
+    - url: "https://orcid.org/0000-0002-1888-7098"
+      image:
+        src: "/assets/images/ORCID-iD_icon_vector.svg"
+        a11y: "ORCID iD"
+      label: 0000-0002-1888-7098
 extra_links:
     - url: "https://twin.uk.com"
       icon:
