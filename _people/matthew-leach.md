@@ -18,6 +18,11 @@ links:
         class: "fab fa-github"
         a11y: "GitHub"
       label: "@MILeach"
+    - url: "https://orcid.org/0000-0002-8901-5609"
+      image:
+        src: "/assets/images/ORCID-iD_icon_vector.svg"
+        a11y: "ORCID iD"
+      label: 0000-0002-8901-5609
 extra_links:
 ---
 
