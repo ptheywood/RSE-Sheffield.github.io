@@ -193,44 +193,62 @@ layout: default
 </section> -->
 
 <section class="section">
-    <div class="container my-4">
-        <div class="row">
+    <div class="container">
+        <div class="row my-4">
             <div class="col-sm-12">
-                <div class="jumbotron">
-                    <h4 class="h1">Events</h4>
-                    <p class="lead">We do events...</p>
-                    <hr class="my-4">
-                    <p>Hard to include the next upcoming event in a slide here on a static site. Probably should just have generic text and then could use js to insert an event if there are any in the future?</p>
+                <div class="jumbotron bg-uos- text-uos-">
+                    <h4 class="h1">Featured Blog: {{ blog_post_0.title }}</h4>
                     <p class="lead">
-                        <a class="btn btn-primary btn-lg" href="/events/" role="button">All Events</a>
+                        {% if blog_post_0.author %}
+                        <span>
+                            <i class="fas fa-user"></i>
+                            <span class="media-body"><strong>{{ blog_post_0.author }}</strong></span>
+                        </span>
+                        {% endif %}
+                        {% if blog_post_0.date %}
+                        <br />
+                        <span>
+                            <i class="far fa-clock"></i>
+                            <span class="media-body"><strong>{{ blog_post_0.date | date: "%-d %B %Y" }}</strong></span>
+                        </span>
+                        {% endif %}
+                    </p>
+                    
+                    <hr />
+
+                    <p>{{blog_post_0.excerpt }}</p>
+                    <p class="lead">
+                        <a href="{{ blog_post_0.url | relative_url }}"" class="btn btn-uos-electric-violet">Read More</a>
+                        <a href="/newsletters/" class="btn btn-dark">All Blog articles</a>
                     </p>
                 </div>
             </div>
             <!-- <div class="col-sm-12">
                 <div class="jumbotron">
-                    <h4 class="h1">{{newsletter_0.date | date: "%B %Y"}} newsletter</h4>
-                    <p class="lead">Read the latest University of Sheffield Research Software Engineering Community Newsletter</p>
-                    <p>
-                        {% if newsletter_0.editor %}
+                    <h4 class="h1">Featured Blog: {{ blog_post_1.title }}</h4>
+                    <p class="lead">
+                        {% if blog_post_1.author %}
                         <span>
                             <img class="align-self-center mr-2" src="/assets/images/icons/icons8-person-50.png" width="20" alt="Posted By"/>
-                            <span class="media-body"><strong>{{ newsletter_0.editor }}</strong></span>
+                            <span class="media-body"><strong>{{ blog_post_1.author }}</strong></span>
                         </span>
                         {% endif %}
-                        {% if newsletter_0.date %}
+                        {% if blog_post_1.date %}
                         <br />
                         <span>
                             <img class="align-self-center mr-2" src="/assets/images/icons/icons8-watch-50.png" width="20" alt="Date"/>
-                            <span class="media-body"><strong>{{ newsletter_0.date | date: "%-d %B %Y" }}</strong></span>
+                            <span class="media-body"><strong>{{ blog_post_1.date | date: "%-d %B %Y" }}</strong></span>
                         </span>
                         {% endif %}
                     </p>
 
-                    <hr / >
+                    <hr />
+
+                    <p>{{blog_post_1.excerpt }}</p>
 
                     <p class="lead">
-                        <a href="{{ newsletter_0.url }}" class="btn btn-uos-electric-violet">Read more</a>
-                        <a href="/newsletters/" class="btn btn-dark">All Newsletters</a>
+                        <a href="{{ blog_post_1.url | relative_url }}"" class="btn btn-uos-electric-violet">Read More</a>
+                        <a href="/newsletters/" class="btn btn-dark">All Blog articles</a>
                     </p>
                 </div>
             </div> -->
@@ -375,65 +393,49 @@ layout: default
                 </div>
             </div>
         </div>
+        
         <div class="row my-4">
             <div class="col-sm-12">
-                <div class="jumbotron bg-uos- text-uos-">
-                    <h4 class="h1">Featured Blog: {{ blog_post_0.title }}</h4>
+                <div class="jumbotron">
+                    <h4 class="h1">Events</h4>
+                    <p class="lead">We do events...</p>
+                    <hr class="my-4">
+                    <p>Hard to include the next upcoming event in a slide here on a static site. Probably should just have generic text and then could use js to insert an event if there are any in the future?</p>
                     <p class="lead">
-                        {% if blog_post_0.author %}
-                        <span>
-                            <i class="fas fa-user"></i>
-                            <span class="media-body"><strong>{{ blog_post_0.author }}</strong></span>
-                        </span>
-                        {% endif %}
-                        {% if blog_post_0.date %}
-                        <br />
-                        <span>
-                            <i class="far fa-clock"></i>
-                            <span class="media-body"><strong>{{ blog_post_0.date | date: "%-d %B %Y" }}</strong></span>
-                        </span>
-                        {% endif %}
-                    </p>
-                    
-                    <hr />
-
-                    <p>{{blog_post_0.excerpt }}</p>
-                    <p class="lead">
-                        <a href="{{ blog_post_0.url | relative_url }}"" class="btn btn-uos-electric-violet">Read More</a>
-                        <a href="/newsletters/" class="btn btn-dark">All Blog articles</a>
+                        <a class="btn btn-primary btn-lg" href="/events/" role="button">All Events</a>
                     </p>
                 </div>
             </div>
             <!-- <div class="col-sm-12">
                 <div class="jumbotron">
-                    <h4 class="h1">Featured Blog: {{ blog_post_1.title }}</h4>
-                    <p class="lead">
-                        {% if blog_post_1.author %}
+                    <h4 class="h1">{{newsletter_0.date | date: "%B %Y"}} newsletter</h4>
+                    <p class="lead">Read the latest University of Sheffield Research Software Engineering Community Newsletter</p>
+                    <p>
+                        {% if newsletter_0.editor %}
                         <span>
                             <img class="align-self-center mr-2" src="/assets/images/icons/icons8-person-50.png" width="20" alt="Posted By"/>
-                            <span class="media-body"><strong>{{ blog_post_1.author }}</strong></span>
+                            <span class="media-body"><strong>{{ newsletter_0.editor }}</strong></span>
                         </span>
                         {% endif %}
-                        {% if blog_post_1.date %}
+                        {% if newsletter_0.date %}
                         <br />
                         <span>
                             <img class="align-self-center mr-2" src="/assets/images/icons/icons8-watch-50.png" width="20" alt="Date"/>
-                            <span class="media-body"><strong>{{ blog_post_1.date | date: "%-d %B %Y" }}</strong></span>
+                            <span class="media-body"><strong>{{ newsletter_0.date | date: "%-d %B %Y" }}</strong></span>
                         </span>
                         {% endif %}
                     </p>
 
-                    <hr />
-
-                    <p>{{blog_post_1.excerpt }}</p>
+                    <hr / >
 
                     <p class="lead">
-                        <a href="{{ blog_post_1.url | relative_url }}"" class="btn btn-uos-electric-violet">Read More</a>
-                        <a href="/newsletters/" class="btn btn-dark">All Blog articles</a>
+                        <a href="{{ newsletter_0.url }}" class="btn btn-uos-electric-violet">Read more</a>
+                        <a href="/newsletters/" class="btn btn-dark">All Newsletters</a>
                     </p>
                 </div>
             </div> -->
         </div>
+
         <div class="row my-2">
             <div class="col-12">
                 <div style="height: 400px; overflow: hidden;">
